@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ExceptionsBase\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ResourceErrorMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceErrorMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ResourceErrorMessages.resx">
+      <AccessModifier>public</AccessModifier>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceErrorMessages.Designer.cs</LastGenOutput>
+      <StronglyTypedFileName>ResourceErrorMessages.Designer.cs</StronglyTypedFileName>
+      <StronglyTypedNamespace>Exceptions</StronglyTypedNamespace>
+      <StronglyTypedClassName>ResourceErrorMessages</StronglyTypedClassName>
+      <StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
